@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maratones y Carreras</title>
+    <link rel="icon" href="icons8-emoji-medalla-deportiva-48.png">
+    <link rel="stylesheet" href="registro.component.css">
+</head>
+<div class="header">
+  <div class="top-right">
+  <button class="button"id="sesion-btn">Iniciar Sesión</button>
+  <button class="button" id="registrarse-btn">Registrarse</button>
+</div>
+<div class="top-center">
+  <button class="link" id="inicio-btn">Inicio</button>
+  <button class="link">Ubicación</button>
+  <button class="link" id="registro-btn">Registro</button>
+  <button class="link">Información</button>
+</div>
+<form action="registro.php" method="post">
+    <fieldset>
+      <legend>Registrate para tu proxima Carrera</legend>
+      <div>
+        <label for="name">Nombre(s):</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div>
+        <label for="surname">Apellido(s):</label>
+        <input type="text" id="surname" name="surname">
+      </div>
+      <div>
+        <label for="birthdate">Fecha de Nacimiento:</label>
+        <input type="date" id="birthdate" name="birthdate">
+      </div>
+      <div>
+        <label for="gender">Sexo:</label>
+        <select id="gender" name="gender">
+          <option value="male">Masculino</option>
+          <option value="female">Femenino</option>
+          <option value="other">Sin especificar</option>
+        </select>
+      </div>
+      <div>
+        <label for="email">Correo Electronico:</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div>
+        <label for="disciplines">Disciplina:</label>
+        <input type="text" id="disciplines" name="disciplines">
+      </div>
+      <div>
+        <label for="category">Categoria:</label>
+        <input type="text" id="category" name="category">
+      </div>
+      <div>
+        <label for="phone">Telefono:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div>
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age">
+      </div>
+      <div>
+        <label for="location">Ubicación:</label>
+        <input type="text" id="location" name="location">
+      </div>
+      <div>
+        <label for="state">Estado:</label>
+        <input type="text" id="state" name="state">
+      </div>
+      <div>
+        <input type="submit" value="Register">
+      </div>
+    </fieldset>
+  </form>
+
+  <script>
+    document.getElementById("inicio-btn").addEventListener("click", function() {
+        window.location.href = "index.html";
+    });
+  </script>
+
+  <script>
+    document.getElementById("registro-btn").addEventListener("click", function() {
+        window.location.href = "registro.component.html";
+    });
+</script> 
+
+<script>
+  document.getElementById("sesion-btn").addEventListener("click", function() {
+      window.location.href = "sesion.component.html";
+  });
+</script> 
+
+<script>
+  document.getElementById("registrarse-btn").addEventListener("click", function() {
+      window.location.href = "sesion.component.html";
+  });
+</script>
+<body>
+</body>
+</html>

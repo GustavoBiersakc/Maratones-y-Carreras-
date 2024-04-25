@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maratones & Carreras </title>
+    <link rel="icon" href="icons8-emoji-medalla-deportiva-48.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="header">
+    <div class="top-right">
+    <button class="button"id="sesion-btn">Iniciar Sesión</button>
+    <button class="button" id="registrarse-btn">Registrarse</button>
+  </div>
+  <div class="top-center">
+    <button class="link" id="inicio-btn">Inicio</button>
+    <button class="link">Ubicación</button>
+    <button class="link" id="registro-btn">Registro</button>
+    <button class="link">Información</button>
+  </div>
+    <p>Registrate ahora para tu proxima carrera para mas contenido visita nuestra seccion de información</p>
+  </div>
+  <div class="carousel">
+  <div class="slide active">
+    <img src="imagen 1.jpg" alt="Image 1">
+  </div>
+  <div class="slide">
+    <img src="imagen 2.jpg" alt="Image 2">
+  </div>
+  <div class="slide">
+    <img src="imagen 3.jpg" alt="Image 3">
+  </div>
+  <div class="slide">
+    <img src="Imagen de WhatsApp 2024-03-20 a las 08.55.37_ba3d2f89.jpg" alt="Image 4">
+  </div>
+  <div class="slide">
+    <img src="imagen 4.jpg" alt="Image 5">
+  </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+  const slides = document.querySelectorAll('.slide');
+  let currentSlide = 0;
+
+  function nextSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+
+  setInterval(nextSlide, 3000); // Cambia de imagen cada 3 segundos
+});
+    </script>
+    <div>
+      <a>Inscribete Ahora!!</a>
+    </div>
+  </div>
+</div> 
+
+
+  <script>
+    document.getElementById("inicio-btn").addEventListener("click", function() {
+        window.location.href = "index.html";
+    });
+  </script>
+
+  <script>
+    document.getElementById("registro-btn").addEventListener("click", function() {
+        window.location.href = "registro.component.html";
+    });
+</script> 
+
+<script>
+  document.getElementById("sesion-btn").addEventListener("click", function() {
+      window.location.href = "sesion.component.html";
+  });
+</script> 
+
+<script>
+  document.getElementById("registrarse-btn").addEventListener("click", function() {
+      window.location.href = "sesion.component.html";
+  });
+</script>
+<body>
+</body>
+</html>
